@@ -1,0 +1,45 @@
+// PCAT Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM169",
+  slug: "pcat",
+  name: "PCAT",
+  fullName: "Pharmacy College Admission Test legacy",
+  alias: "Pharmacy College Admission Test legacy",
+  family: "PCAT",
+  category: "Admissions",
+  subcategory: "Pharmacy admissions",
+  country: "United States",
+  region: "North America",
+  languages: ["English"],
+  estimatedAnnualTakers: "declining/legacy",
+  testingWindow: "Limited",
+  schedulePattern: "Legacy/declining",
+  ageGroup: "20-30",
+  targetUser: "Pharmacy applicant",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ + writing"],
+  adaptivity: "Linear",
+  sections: "Multiple sections",
+  scoringMode: "Scaled",
+  essayOrSpeaking: "Essay",
+  ipRisk: "High",
+  contentReuse: "science_admissions",
+  uiEngine: "timed_objective_plus_written",
+  monetizationPotential: "Low",
+  tier: "Tier 10",
+  launchWave: "Deprioritize",
+  themeColor: "#1E40AF",
+  themeColorDark: "#1E3A8A",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
