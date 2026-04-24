@@ -1,4 +1,4 @@
-// Auto-generated content manifest for Pcat
+// Auto-generated content manifest for PCAT
 // Question targets are 2-3x competition floor
 
 export type ActivityType =
@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -34,36 +34,54 @@ export interface ContentManifest {
 
 export const CONTENT_MANIFEST: ContentManifest = {
   examId: "pcat",
-  examName: "Pcat",
-  totalQuestions: 2300,
+  examName: "PCAT",
+  totalQuestions: 2700,
   category: "admissions",
   topics: [
-  {
-    id: "verbal",
-    domain: "verbal",
-    title: "Verbal",
-    icon: "📖",
-    color: "#1E40AF",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "reading_passage", "cloze_deletion"],
-  },
-  {
-    id: "quantitative",
-    domain: "quantitative",
-    title: "Quantitative",
-    icon: "🔢",
-    color: "#7C3AED",
-    questionTarget: 900,
-    activityTypes: ["multiple_choice", "numeric_input", "whiteboard"],
-  },
-  {
-    id: "writing",
-    domain: "writing",
-    title: "Writing",
-    icon: "✍️",
-    color: "#D97706",
-    questionTarget: 500,
-    activityTypes: ["essay"],
-  }
+    {
+  id: "biological-processes",
+  domain: "biological-processes",
+  title: "Biological Processes",
+  icon: "🧬",
+  color: "#059669",
+  minQuestionCount: 700,
+  requiredActivityTypes: ["multiple_choice", "reading_passage"],
+},
+{
+  id: "chemical-processes",
+  domain: "chemical-processes",
+  title: "Chemical Processes",
+  icon: "⚗️",
+  color: "#DC2626",
+  minQuestionCount: 700,
+  requiredActivityTypes: ["multiple_choice", "numeric_input"],
+},
+{
+  id: "critical-reading",
+  domain: "critical-reading",
+  title: "Critical Reading",
+  icon: "📖",
+  color: "#1E40AF",
+  minQuestionCount: 450,
+  requiredActivityTypes: ["multiple_choice", "reading_passage"],
+},
+{
+  id: "quantitative-reasoning",
+  domain: "quantitative-reasoning",
+  title: "Quantitative Reasoning",
+  icon: "🔢",
+  color: "#D97706",
+  minQuestionCount: 500,
+  requiredActivityTypes: ["multiple_choice", "numeric_input", "whiteboard"],
+},
+{
+  id: "verbal-ability",
+  domain: "verbal-ability",
+  title: "Verbal Ability",
+  icon: "🗣️",
+  color: "#7C3AED",
+  minQuestionCount: 350,
+  requiredActivityTypes: ["multiple_choice", "fill_in_blank"],
+}
   ],
 };
